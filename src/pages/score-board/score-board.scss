@@ -1,0 +1,68 @@
+page-score-board {
+
+  ion-content{
+    background-color:green !important;
+}
+.container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+.teamNames{
+    display: flex;
+    justify-content: space-around;
+}
+
+.score{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+  .one{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    border: 5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+  
+  }
+
+  .two{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    border-radius: 50%;
+    border: 5px solid white;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+  }
+
+  .buttons{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+  }
+
+  .btn{
+       height: 40px;
+       color: white;
+       background-color:green;
+       border: 2px solid white;
+       border-radius: 10px;
+       margin: 10px;
+  }
+
+  .button2{
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+  }
+
+
+}

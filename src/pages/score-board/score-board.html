@@ -1,0 +1,56 @@
+<!--
+  Generated template for the ScoreBoardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>ScoreBoard</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+<div class="container">
+
+<div *ngIf="team1 && team2" class="teamNames">
+
+  <div class="team1">
+    <h4>{{team1}}</h4>
+  </div>
+
+  <div class="team2"><h4>VS</h4></div>
+
+  <div class="team2">
+      <h4>{{team2}}</h4>
+    </div>
+
+</div>
+
+  <div class="score">
+    <div class="one">
+        <h4>{{team1Score}}</h4>
+    </div>
+
+    <div class="two">
+        <h4>{{team2Score}}</h4>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <div class="btn">
+      <button  (click)="Addteam1Score()" class="btn">Add Score</button>
+    </div>
+
+    <div class="btn">
+        <button (click)="Addteam2Score()" class="btn">Add Score</button>
+    </div>
+  </div>
+
+  <div class="button2">
+      <button (click)="resetButton()" class="btn">Reset</button>
+      <button (click)="PopThisPage()" class="btn">Back</button>
+  </div>
+</div>
+
+</ion-content>

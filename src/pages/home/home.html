@@ -1,14 +1,38 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+     Score Board 
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding  class="image">
+
+  <div class="container">
+
+      <div class="header">
+        <h1>SOCCER SCORE BOARD</h1>
+        </div>
+
+    <div >
+      <img src="http://clipart-library.com/images/8cE69jdni.jpg" alt="Pic not found" class="icon">
+    </div>
+
+    <div  class="I">
+      <input type="text" [(ngModel)]="team1" placeholder="Enter the team name" class="teamOne">
+    </div>
+
+    <div class="I">
+        <input type="text" [(ngModel)]="team2" placeholder="Enter the team name" class="teamOne">
+      </div>
+
+      <div class="details">
+        <h3>
+            The game has evolved from the sport of kicking a rudimentary animal-hide ball around into the World Cup sport it is today.
+        </h3>
+      </div>
+
+      <button (click)="pushPage()" class="btn">Get Started</button>
+  </div>
+
 </ion-content>
